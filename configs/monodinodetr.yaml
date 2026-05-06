@@ -2,7 +2,7 @@ random_seed: 444
 
 dataset:
   type: &dataset_type 'KITTI'
-  root_dir: '/home/usrg/mono3d_ws/KITTI'  # change this path to your own dataset path
+  root_dir: 'C:\Users\ahmad\Downloads\Compressed\test_testy245'  # change this path to your own dataset path
   train_split: 'train'
   test_split: 'val'
   batch_size: 8
@@ -11,7 +11,7 @@ dataset:
   use_dontcare: False
   bbox2d_type: 'anno'  # 'proj' or 'anno'
   meanshape: False  # use predefined anchor or not
-  writelist: ['Car']
+  writelist: ['Collection_6_000', 'Collection_6_001', 'Collection_6_002', 'Collection_6_003']
   clip_2d: False
 
   aug_pd: True
