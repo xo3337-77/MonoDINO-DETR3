@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from torch import nn
 import math
 import copy
-
+from lib.models.monodinodetr.rotation_utils import euler_to_rotmat, geodesic_loss
 from utils import box_ops
 from utils.misc import (NestedTensor, nested_tensor_from_tensor_list,
                             accuracy, get_world_size, interpolate,
